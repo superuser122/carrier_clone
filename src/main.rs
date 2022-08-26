@@ -2,9 +2,12 @@ use bevy::prelude::*;
 mod splash;
 use splash::SplashPlugin;
 mod ui;
-use ui::{spawn_button, spawn_menu_container};
 mod menu;
 use menu::MenuPlugin;
+mod pause;
+use pause::GamePausePlugin;
+mod game;
+use game::GamePlugin;
 
 
 #[derive(Clone, Eq, PartialEq, Debug, Hash)]
@@ -20,7 +23,22 @@ pub enum GameLevel{
     None,
     Pause,
     LevelOne,
-    Level
+    LevelTwo,
+    LevelThree,
+    LevelFour,
+    LevelFive,
+    LevelSix,
+    LevelSeven,
+    LevelEight,
+    LevelNine,
+    LevelTen,
+}
+
+#[derive(Clone, Eq, PartialEq, Debug, Hash)]
+pub enum PlayerSpawned{
+    Yes,
+    No,
+    Paused,
 }
 
 fn main() {
@@ -35,7 +53,10 @@ fn main() {
         .add_plugins(DefaultPlugins)
         .add_plugin(SplashPlugin)
         .add_plugin(MenuPlugin)
+        .add_plugin(GamePausePlugin)
+        .add_plugin(GamePlugin)
         .add_state(GameState::Splash)
+        .add_state(PlayerSpawned::No)
         .add_state(GameLevel::None)
         .run();
 }

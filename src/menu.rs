@@ -1,7 +1,7 @@
 use num_derive::FromPrimitive;    
 use num_traits::FromPrimitive;
 use bevy::{prelude::*, app::AppExit,};
-use super::{despawn_screen, GameState, GameLevel, ui::* };
+use super::{despawn_screen, GameState, ui::* };
 
 
 pub struct MenuPlugin;
