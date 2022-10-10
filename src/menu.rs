@@ -43,6 +43,9 @@ impl Plugin for MenuPlugin {
 
 // spawn everything needed for this screen
 fn setup(mut commands: Commands, asset_server: Res<AssetServer>){
+    
+    commands.spawn_bundle(Camera2dBundle::default()).insert(OnMenuScreen);
+
     //All the button names
     let button_texts = vec!["START", "QUIT"];
 
@@ -55,7 +58,8 @@ fn setup(mut commands: Commands, asset_server: Res<AssetServer>){
         
         //Helper function gets the enum value from text
         let menu_type = menu_item_from_text(text);
-        let button = spawn_button(&mut commands, &asset_server, text, menu_type);
+        let button = spawn_button(&mut commands, &asset_server, text, menu_type,);
+        
         commands.entity(node).add_child(button);
     }
     //Insert the resource with default value
@@ -80,12 +84,12 @@ fn menu_item_from_text(text: &str) -> MenuButton {
 
 //Change the selected button scale so you know with is it
 fn mark_selected(selected: Res<SelectedButton>, mut query: Query<(&mut Transform, &MenuButton)>){
-    for (mut transfom, menu_button) in query.iter_mut(){
+    for (mut transform, menu_button) in query.iter_mut(){
         if selected.0 == menu_button.0{
-            transfom.scale = Vec3::new(1.2, 1.2, 1.);
+            transform.scale = Vec3::new(1.2, 1.2, 1.);
         }
         else{
-            transfom.scale = Vec3::new(1., 1., 1.);
+            transform.scale = Vec3::new(1., 1., 1.);
         }
     }
 }

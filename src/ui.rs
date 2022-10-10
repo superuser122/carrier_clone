@@ -2,6 +2,9 @@ use bevy::prelude::*;
 
 const BUTTON_COLOR: Color = Color::rgb(0.53, 0.38, 0.2);
 
+#[derive(Component)]
+pub struct ResetButton;
+
 pub fn spawn_menu_container(commands: &mut Commands) -> Entity{
     commands
         .spawn_bundle(NodeBundle {
@@ -16,7 +19,7 @@ pub fn spawn_menu_container(commands: &mut Commands) -> Entity{
         }).id()
 }
 
-pub fn spawn_button(commands: &mut Commands, asset_server: &Res<AssetServer>, text: &str, comp: impl Component) -> Entity{
+pub fn spawn_button(commands: &mut Commands, asset_server: &Res<AssetServer>, text: &str, comp: impl Component,) -> Entity{
     commands.spawn_bundle(ButtonBundle {
         style: Style {
             size: Size::new(Val::Px(192.0), Val::Px(48.0)),

@@ -6,16 +6,27 @@ pub struct GameGrid {
 }
 
 impl GameGrid{
-    pub fn new(widht: i32, length: i32, hight: i32) -> Self {
+    pub fn new(widht: i32, length: i32, height: i32) -> Self {
         let mut grid:HashMap<GridCell, Option<GridCellType>> = HashMap::new();
         for x in 0..widht{
-            for y in 0..hight{
+            for y in 0..height{
                 for z in 0..length{
                     grid.insert(GridCell{x,y,z}, None);
                 }
             }
         }
         GameGrid { grid }
+    }
+
+    pub fn reset(&mut self, widht: i32, length: i32, height: i32){
+        self.grid.clear();
+        for x in 0..widht{
+            for y in 0..height{
+                for z in 0..length{
+                    self.grid.insert(GridCell{x,y,z}, None);
+                }
+            }
+        }
     }
 
     pub fn tiles_from_csv(mut self, tiles: Vec<String>) -> Self {

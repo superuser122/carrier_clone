@@ -1,0 +1,46 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "levelone.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "blocks.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "levelone.tmx": {
+            "scale": 6.029861111111111,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 64.26350339744329,
+                "y": 72.14096510422665
+            }
+        }
+    },
+    "last.exportedFilePath": "E:/Games/carrier_clone/tiled",
+    "last.imagePath": "E:/Games/carrier_clone/tiled",
+    "map.height": 9,
+    "map.lastUsedExportFilter": "CSV files (*.csv)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 8,
+    "openFiles": [
+        "levelone.tmx",
+        "blocks.tsx"
+    ],
+    "project": "levelone.tiled-project",
+    "recentFiles": [
+        "blocks.tsx",
+        "levelone.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

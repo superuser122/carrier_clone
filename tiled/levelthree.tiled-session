@@ -1,0 +1,128 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "levelten.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "blocks.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "leveleight.tmx": {
+            "scale": 7.474652777777777,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 72.17726575927905,
+                "y": 56.05611557578855
+            }
+        },
+        "levelfive.tmx": {
+            "scale": 5.426875,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 64.03316825981803,
+                "y": 80.15662789358517
+            }
+        },
+        "levelfour.tmx": {
+            "scale": 5.9909375,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 80.03755672630534,
+                "y": 56.08471128266652
+            }
+        },
+        "levelnine.tmx": {
+            "scale": 6.78359375,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 72.01197742715651,
+                "y": 64.12530231486814
+            }
+        },
+        "levelone.tmx": {
+            "scale": 6.029861111111111,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 64.26350339744329,
+                "y": 72.14096510422665
+            }
+        },
+        "levelseven.tmx": {
+            "scale": 5.9909375,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 90.38652130822597,
+                "y": 55.75087371550781
+            }
+        },
+        "levelsix.tmx": {
+            "scale": 7.7526785714285715,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 56.04514568697455,
+                "y": 56.36761487964989
+            }
+        },
+        "levelten.tmx": {
+            "scale": 6.115625,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 88.05314256515074,
+                "y": 56.085845682166564
+            }
+        },
+        "leveltree.tmx": {
+            "scale": 6.78359375,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 69.21110215363355,
+                "y": 25.060462973626628
+            }
+        },
+        "leveltwo.tmx": {
+            "scale": 7.488671875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 64.16358040790777,
+                "y": 48.206144697720525
+            }
+        }
+    },
+    "last.exportedFilePath": "E:/Games/carrier_clone/tiled",
+    "last.imagePath": "E:/Games/carrier_clone/tiled",
+    "map.height": 7,
+    "map.lastUsedExportFilter": "CSV files (*.csv)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 11,
+    "openFiles": [
+        "leveleight.tmx",
+        "levelnine.tmx",
+        "levelten.tmx"
+    ],
+    "project": "levelthree.tiled-project",
+    "recentFiles": [
+        "leveleight.tmx",
+        "levelnine.tmx",
+        "levelten.tmx",
+        "levelfour.tmx",
+        "levelone.tmx",
+        "levelsix.tmx",
+        "leveltree.tmx",
+        "levelseven.tmx",
+        "leveltwo.tmx",
+        "levelfive.tmx",
+        "blocks.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}
